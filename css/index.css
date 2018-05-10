@@ -1,6 +1,9 @@
-li {
-  background: #849a9a; }
-  li ul {
-    display: box; }
+html {
+  font-family: Rockwell, Arial, Helvetica, Sans-serif; }
+
+nav {
+  background: #849a9a;
+  display: box;
+  margin: 0; }
 
 /*# sourceMappingURL=index.css.map */
