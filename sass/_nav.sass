@@ -1,0 +1,23 @@
+//- sass --watch ./:../css
+nav
+    display: box
+    background: $grey
+    text-transform: uppercase
+    ul 
+        color: $w
+        display: box
+        letter-spacing: $letter
+        padding: 30px
+        list-style: none
+        position: relative
+        left: 50px
+        @include line (30%)   
+        li.start
+            position: relative
+            left: -50px 
+            padding: 10px
+    .circle
+        padding: 5%
+        border: 1px $w solid
+        background: #ccc
+        display: block
