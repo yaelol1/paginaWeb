@@ -1,0 +1,8 @@
+@media only screen and (min-width: 461px) and (max-width: 840px) {
+  .circle {
+    left: 60%; } }
+@media only screen and (max-width: 460px) {
+  .circle {
+    left: 30px; } }
+
+/*# sourceMappingURL=navMedia.css.map */

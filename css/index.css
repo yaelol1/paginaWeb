@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "bitstream_vera_sansroman";
+  src: url("../css/fonts/web fonts/bitstreamverasans_roman_macroman/Vera-webfont.eot");
+  src: url("../css/fonts/web fonts/bitstreamverasans_roman_macroman/Vera-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/web fonts/bitstreamverasans_roman_macroman/Vera-webfont.woff2") format("woff2"), url("../css/fonts/web fonts/bitstreamverasans_roman_macroman/Vera-webfont.woff") format("woff"), url("../css/fonts/web fonts/bitstreamverasans_roman_macroman/Vera-webfont.ttf") format("truetype"), url("../css/fonts/web fonts/bitstreamverasans_roman_macroman/Vera-webfont.svg#bitstream_vera_sansroman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 * {
-  font-family: Rockwell, Arial, Helvetica, Sans-serif;
+  font-family: Roboto, Rockwell, Arial, Helvetica, Sans-serif;
   padding: 0;
   margin: 0; }
 
@@ -7,28 +13,58 @@ nav {
   display: box;
   background: #3d3d3d;
   text-transform: uppercase; }
+  nav a {
+    text-decoration: none;
+    color: #fff; }
+  nav a:visited {
+    text-decoration: none;
+    color: #fff; }
+  nav a:hover {
+    color: #fff;
+    text-decoration: underline; }
   nav ul {
     color: #fff;
-    display: box;
-    letter-spacing: 15px;
-    padding: 30px;
+    letter-spacing: 10px;
+    padding: 10px 0px;
     list-style: none;
     position: relative;
     left: 50px; }
-    nav ul div {
-      background: #fff;
-      width: 30%;
-      height: 5px;
-      position: relative;
-      display: block; }
+    nav ul li {
+      padding: 2px 0px; }
     nav ul li.start {
-      position: relative;
-      left: -50px;
-      padding: 10px; }
-  nav .circle {
-    padding: 5%;
-    border: 1px #fff solid;
-    background: #ccc;
-    display: block; }
+      position: relative; }
+  nav .line {
+    background: #fff;
+    height: 3px;
+    width: 40%;
+    margin: 5px 0px; }
 
-/*# sourceMappingURL=index.css.map */
+.circle {
+  height: 20px;
+  width: 20px;
+  padding: 30px;
+  border: 3px #fff solid;
+  border-radius: 50%;
+  position: fixed;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 90%;
+  top: 20px; }
+  .circle .c2 {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px #fff solid;
+    left: 7px;
+    top: 7px; }
+
+@media only screen and (min-width: 461px) and (max-width: 840px) {
+  .circle {
+    left: 60%; } }
+@media only screen and (max-width: 460px) {
+  .circle {
+    left: 30px; } }
+
+

@@ -1,18 +1,30 @@
 //- pug -w C:/proyectos/paginaWeb/pug -o C:/proyectos/paginaWeb/html -P
+
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="../css/index.css")
         title Dental Salazar
+        script(src="../js")
     body
-        nav 
+        nav
           ul 
-              li.start Inicio   
+              li.start   
+                a(href="inicio.html") 
+                    | Inicio
               .line
-              li Servicios
-              li Conocenos
-              li Artículos  
-          .circle
-            .cross
-            .cross2
+              li
+               a(href="servicios.html")
+                    | Servicios
+              li 
+                a(href="conocenos.html")
+                    | Conocenos
+              li 
+                a(href="artículos.html")
+                    | Artículos  
+          a  
+                .circle
+                    .c2
+                    .cross
+                        .cross2
